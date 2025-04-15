@@ -7,7 +7,7 @@ metadata:
 spec:
   destination:
     name: in-cluster
-    namespace: argocd
+    namespace: example-app
   project: example-app
   source:
     repoURL: https://github.com/rknaus/argocd-gitops
@@ -17,3 +17,5 @@ spec:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
