@@ -36,6 +36,7 @@ spec:
     - toFQDNs:
         - matchName: github.com
         - matchName: bitnami-labs.github.io
+        - matchName: release-assets.githubusercontent.com
       toPorts:
         - ports:
             - port: "443"
