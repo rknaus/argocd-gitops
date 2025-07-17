@@ -11,7 +11,7 @@ spec:
   project: cluster-infrastructure
   source:
     repoURL: https://github.com/rknaus/argocd-gitops
-    targetRevision: HEAD
+    targetRevision: feature/cilium-base-policies
     path: apps/cilium-base-policies
   syncPolicy:
     automated:
