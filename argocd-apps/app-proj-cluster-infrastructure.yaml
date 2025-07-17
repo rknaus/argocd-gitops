@@ -14,4 +14,4 @@ spec:
       server: 'https://kubernetes.default.svc'
   sourceRepos:
     - https://github.com/rknaus/argocd-gitops
-    - https://charts.bitnami.com/bitnami
+    - https://bitnami-labs.github.io/sealed-secrets
