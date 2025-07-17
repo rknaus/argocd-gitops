@@ -2,17 +2,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: example-app
+  name: external-dns
   namespace: argocd
 spec:
   destination:
     name: in-cluster
-    namespace: example-app
+    namespace: external-dns
   project: cluster-infrastructure
   source:
     repoURL: https://github.com/rknaus/argocd-gitops
-    targetRevision: HEAD
-    path: apps/example-app
+    chart: sealed-secrets-mikrotik
+    targetRevision: feature/external-dns
+    path: apps/external-dns
   syncPolicy:
     automated:
       prune: true
