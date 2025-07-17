@@ -35,8 +35,7 @@ spec:
         - kube-apiserver
     - toFQDNs:
         - matchName: github.com
-        - matchName: charts.bitnami.com
-        - matchName: repo.broadcom.com
+        - matchName: bitnami-labs.github.io
       toPorts:
         - ports:
             - port: "443"
