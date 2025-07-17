@@ -8,7 +8,7 @@ spec:
   destination:
     name: in-cluster
     namespace: example-app
-  project: example-app
+  project: cluster-infrastructure
   source:
     repoURL: https://github.com/rknaus/argocd-gitops
     targetRevision: HEAD

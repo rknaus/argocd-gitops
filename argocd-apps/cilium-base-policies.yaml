@@ -2,17 +2,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-of-apps
+  name: cilium-base-policies
   namespace: argocd
 spec:
   destination:
     name: in-cluster
     namespace: argocd
+  project: cluster-infrastructure
   source:
-    path: argocd-apps
     repoURL: https://github.com/rknaus/argocd-gitops
     targetRevision: HEAD
-  project: app-of-apps
+    path: apps/cilium-base-policies
   syncPolicy:
     automated:
       prune: true
